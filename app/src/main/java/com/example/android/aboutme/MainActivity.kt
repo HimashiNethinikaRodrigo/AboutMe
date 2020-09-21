@@ -15,6 +15,10 @@ class MainActivity : AppCompatActivity() {
         buttonDone.setOnClickListener {
             clickHandlerFunction(it)
         }
+
+        textViewNickName.setOnClickListener {
+            updateNickName(it)
+        }
     }
 
     private fun clickHandlerFunction(view: View) {
@@ -27,4 +31,16 @@ class MainActivity : AppCompatActivity() {
             0
         )
     }
+
+    private fun updateNickName(view: View) {
+        buttonDone.visibility = View.VISIBLE
+        editTextNickName.visibility = View.VISIBLE
+        textViewNickName.visibility = View.GONE
+        editTextNickName.requestFocus()
+        (getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager).showSoftInput(
+            editTextNickName,
+            0
+        )
+    }
+
 }
