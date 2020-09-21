@@ -30,10 +30,11 @@
 
     <Button
         android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:text="@string/button" />
 
     <ImageView
         android:id="@+id/imageViewStar"
@@ -44,9 +45,9 @@
         app:srcCompat="@android:drawable/star_big_on" />
 
     <ScrollView
+        android:id="@+id/scrollViewBio"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/scrollViewBio">
+        android:layout_height="match_parent">
 
         <TextView
             android:id="@+id/textViewBio"
