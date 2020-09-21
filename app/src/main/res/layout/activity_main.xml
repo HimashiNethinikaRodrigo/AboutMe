@@ -24,4 +24,20 @@
         android:layout_marginTop="@dimen/yellow_star"
         android:contentDescription="@string/yellow_star"
         app:srcCompat="@android:drawable/star_big_on" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollViewBio">
+
+        <TextView
+            android:id="@+id/textViewBio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingStart="@dimen/layout_padding"
+            android:paddingEnd="@dimen/layout_padding"
+            android:text="@string/bio" />
+    </ScrollView>
+
 </LinearLayout>
