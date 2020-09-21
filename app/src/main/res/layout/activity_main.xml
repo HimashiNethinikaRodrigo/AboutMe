@@ -19,13 +19,14 @@
 
     <EditText
         android:id="@+id/editTextNickName"
+        style="@style/NameStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/hint_text_nick_name"
-        android:inputType="textPersonName"
-        android:textAlignment="center"
-        android:autofillHints="" />
+        android:inputType="textShortMessage|textPersonName|text"
+        android:textAlignment="center" />
 
     <ImageView
         android:id="@+id/imageViewStar"
