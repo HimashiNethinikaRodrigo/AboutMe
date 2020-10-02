@@ -34,7 +34,8 @@
             android:ems="10"
             android:hint="@string/hint_text_nick_name"
             android:inputType="textShortMessage|textPersonName|text"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:text = "@={myName.nickName}"/>
 
         <Button
             android:id="@+id/buttonDone"
@@ -53,7 +54,7 @@
             android:layout_height="wrap_content"
             android:background="@color/colorAccent"
             android:paddingBottom="@dimen/small_padding"
-            android:text=""
+            android:text="@={myName.nickName}"
             android:textAlignment="center"
             android:visibility="gone" />
 

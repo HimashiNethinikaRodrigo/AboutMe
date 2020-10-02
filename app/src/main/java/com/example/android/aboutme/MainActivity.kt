@@ -29,7 +29,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun clickHandlerFunction(view: View) {
         binding.apply {
-            textViewNickName.text = editTextNickName.text
+            myName?.nickName = editTextNickName.text.toString()
+            invalidateAll()
             textViewNickName.visibility = View.VISIBLE
             buttonDone.visibility = View.GONE
             editTextNickName.visibility = View.GONE
